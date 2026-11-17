@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grimório de Babileu — Tormenta20</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Grimório de Babileu</h1>
+    <p>Compêndio Arcano & Divino de Arton (T20)</p>
+  </header>
+
+  <main class="container">
+    <section class="filtros" aria-label="Filtros de Magias">
+      <input type="text" id="campo-busca" placeholder="Buscar magia por nome (ex: Bola de Fogo)...">
+      
+      <select id="filtro-circulo">
+        <option value="todos">Todos os Círculos</option>
+        <option value="1">1º Círculo</option>
+        <option value="2">2º Círculo</option>
+        <option value="3">3º Círculo</option>
+      </select>
+
+      <select id="filtro-tipo">
+        <option value="todos">Arcana & Divina</option>
+        <option value="Arcana">Arcana</option>
+        <option value="Divina">Divina</option>
+      </select>
+    </section>
+
+    <section id="lista-magias" class="grade-magias">
+      <!-- Os cards das magias serão inseridos aqui pelo JavaScript -->
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
